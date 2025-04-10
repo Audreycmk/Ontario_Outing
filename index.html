@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ontario Outing</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="splash-container">
+      <!-- Status Bar -->
+      <div class="status-bar">
+        <div class="time-container" id="status-time">9:41</div>
+        <div class="status-icons">
+          <svg
+            class="status-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 18 12"
+            fill="white"
+          >
+            <path
+              d="M16 8V6h1a1 1 0 0 0 0-2h-1V2a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2zM3 2h11v8H3V2z"
+            />
+            <circle cx="5.5" cy="6.5" r="1.5" />
+            <circle cx="10.5" cy="6.5" r="1.5" />
+          </svg>
+          <svg
+            class="status-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 16"
+            fill="white"
+          >
+            <path
+              d="M17.5 6.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-15a.5.5 0 0 1-.5-.5V7a.5.5 0 0 1 .5-.5h15zM1 7v2a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2z"
+            />
+            <path
+              d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3z"
+            />
+          </svg>
+          <svg
+            class="status-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="white"
+          >
+            <path
+              d="M2 6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+            />
+          </svg>
+          <div class="battery-container">
+            <svg
+              class="status-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 12"
+              fill="white"
+            >
+              <rect width="15" height="8" x="2" y="2" rx="1" ry="1" />
+              <rect width="2" height="4" x="17" y="4" />
+            </svg>
+            <span class="battery-level">82%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- First Splash Screen -->
+      <div class="page page-1 active">
+        <div class="content">
+          <div class="first-screen-content">
+            <img
+              src="images/splashicon.png"
+              alt="Ontario Outing Logo"
+              class="app-icon"
+            />
+            <div class="loading-bar">
+              <div class="loading-progress"></div>
+            </div>
+          </div>
+          <div class="version">Version 1.0</div>
+        </div>
+      </div>
+
+      <!-- Second Splash Screen -->
+      <div class="page page-2 hidden">
+        <div class="content">
+          <div class="tagline">Plan Less,<br />Camp More...</div>
+
+          <!-- Image Carousel -->
+          <div class="image-carousel" id="carousel">
+            <img
+              src="images/onboarding03.svg"
+              class="carousel-image"
+              alt="Camping image 1"
+            />
+            <img
+              src="images/onboarding01.svg"
+              class="carousel-image"
+              alt="Camping image 2"
+            />
+            <img
+              src="images/onboarding02.svg"
+              class="carousel-image"
+              alt="Camping image 3"
+            />
+          </div>
+
+          <div class="buttons">
+            <button
+              class="btn btn-login"
+              onclick="window.location.href='login.html'"
+            >
+              Login
+            </button>
+            <button
+              class="btn btn-signup"
+              onclick="window.location.href='signup.html'"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script/script.js"></script>      
+  </body>
+</html>

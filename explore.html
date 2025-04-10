@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ontario Parks - Explore</title>
+    <link rel="stylesheet" href="css/explore.css">
+</head>
+<body>
+    <div class="phone-mockup">
+        <div class="time" onclick="window.location.href='index.html'"></div>
+
+        <div class="home-bg"></div>
+        <div class="explore">
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search" id="park-search">
+                <button 
+                    class="filter-button" 
+                    style="background-image: url('images/filter.svg');" 
+                    onclick="document.querySelector('.explore').classList.add('expand'); setTimeout(function(){ window.location.href='filter.html'; }, 500);">
+                </button>
+            </div>
+            
+            <div class="filters" id="active-filters">
+            </div>
+            
+            <div class="park-list" id="park-results">
+                <div class="park-card" data-name="Algonquin Park" data-location="Ontario, Canada" 
+                    data-trip="Weekend,Family Friendly" 
+                    data-scenery="Lakefront,Forest" 
+                    data-activities="Hiking,Fishing" 
+                    data-amenities="Showers,Fire Pits" 
+                    data-budget="Budget Friendly" 
+                    data-media="Virtual walk,Photos">
+                    <div class="park-image" style="background-image: url('images/algonquin.svg');">
+                        <div class="park-info">
+                            <div class="park-name">Algonquin Park</div>
+                            <div class="park-location">Ontario, Canada</div>
+                        </div>
+                    </div>
+                    <div class="park-meta">
+                        <span class="camp-icon"></span>
+                        <span>45 Campgrounds</span>
+                        <span class="opening1-icon"></span>
+                        <span>Bookings Open</span>
+                    </div>
+                    <button class="book-now">Book Now</button>
+                </div>
+
+                <div class="park-card" data-name="Banff Park" data-location="Alberta, Canada" 
+                    data-trip="Solo" 
+                    data-scenery="Mountain View" 
+                    data-activities="Hiking,Swimming" 
+                    data-amenities="Toilets,Fire Pits" 
+                    data-budget="Free sites" 
+                    data-media="Photos,Videos" onclick="window.location.href='banff.html'">
+                    <div class="park-image" style="background-image: url('images/banff.svg');">
+                        <div class="park-info">
+                            <div class="park-name">Banff Park</div>
+                            <div class="park-location">Alberta, Canada</div>
+                        </div>
+                    </div>
+                    <div class="park-meta">
+                        <span class="camp-icon"></span>
+                        <span>55 Campgrounds</span>
+                        <span class="opening1-icon"></span>
+                        <span>Bookings Open</span>
+                    </div>
+                </div>
+                
+                <div class="park-card" data-name="Bon Echo Park" data-location="Ontario, Canada" 
+                    data-trip="Weekend,Family Friendly" 
+                    data-scenery="Lakefront" 
+                    data-activities="Swimming,Fishing" 
+                    data-amenities="Showers,Toilets" 
+                    data-budget="Budget Friendly" 
+                    data-media="Virtual walk">
+                    <div class="park-image" style="background-image: url('images/bon-echo.png');">
+                        <div class="park-info">
+                            <div class="park-name">Bon Echo Park</div>
+                            <div class="park-location">Ontario, Canada</div>
+                        </div>
+                    </div>
+                    <div class="park-meta">
+                        <span class="camp-icon"></span>
+                        <span>45 Campgrounds</span>
+                        <span class="opening3-icon"></span>
+                        <span>Bookings Full</span>
+                    </div>
+                </div>
+
+                <div class="park-card" data-name="Jasper Park" data-location="Alberta, Canada" 
+                    data-trip="Solo" 
+                    data-scenery="Mountain View,Forest" 
+                    data-activities="Hiking" 
+                    data-amenities="Fire Pits" 
+                    data-budget="Free sites" 
+                    data-media="Videos">
+                    <div class="park-image" style="background-image: url('images/jasper.svg');">
+                        <div class="park-info">
+                            <div class="park-name">Jasper Park</div>
+                            <div class="park-location">Alberta, Canada</div>
+                        </div>
+                    </div>
+                    <div class="park-meta">
+                        <span class="camp-icon"></span>
+                        <span>23 Campgrounds</span>
+                        <span class="opening2-icon"></span>
+                        <span>Opening Soon</span>
+                    </div>
+                </div>
+
+                <div class="park-card" data-name="Killarney Park" data-location="Ontario, Canada" 
+                    data-trip="Weekend" 
+                    data-scenery="Lakefront,Forest" 
+                    data-activities="Hiking,Swimming" 
+                    data-amenities="Showers,Toilets,Fire Pits" 
+                    data-budget="Budget Friendly" 
+                    data-media="Photos,Videos">
+                    <div class="park-image" style="background-image: url('images/killarney.svg');">
+                        <div class="park-info">
+                            <div class="park-name">Killarney Park</div>
+                            <div class="park-location">Ontario, Canada</div>
+                        </div>
+                    </div>
+                    <div class="park-meta">
+                        <span class="camp-icon"></span>
+                        <span>55 Campgrounds</span>
+                        <span class="opening2-icon"></span>
+                        <span>Opening Soon</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="nav-bar">
+            <a href="home.html" class="nav-item">
+                <span>Home</span>
+            </a>
+            <a href="explore.html" class="nav-item active">
+                <span>Explore</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span>Plan</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span>Profile</span>
+            </a>
+        </div>
+        <div class="home-bar"></div>
+    </div>
+    
+    <script src="js/home.js"></script>
+    <script src="js/explore.js"></script>
+</body>
+</html>

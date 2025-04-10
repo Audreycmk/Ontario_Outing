@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ontario Parks - Explore Filters</title>
+    <link rel="stylesheet" href="css/filter.css">
+</head>
+<body>
+    <div class="phone-mockup">
+        <div class="time" onclick="window.location.href='index.html'"></div>
+
+        <div class="home-bg"></div>
+        <div class="explore">
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search" id="park-search">
+                <button 
+                    class="filter-button" 
+                    style="background-image: url('images/filter.svg');" 
+                    onclick="document.querySelector('.explore').classList.add('expand'); setTimeout(function(){ window.location.href='filter.html'; }, 500);">
+                </button>
+            </div>
+        <div class="filter-container">
+            <div class="filter-header">
+                <div class="filter-actions">
+                    <span class="filter-label">Filters</span>
+                    <button class="clear-all">Clear all</button>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h2>Trip Type</h2>
+                <div class="filter-options">
+                    <button class="filter-option">Weekend</button>
+                    <button class="filter-option">Family Friendly</button>
+                    <button class="filter-option">Solo</button>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h2>Scenery</h2>
+                <div class="filter-options">
+                    <button class="filter-option">Lakefront</button>
+                    <button class="filter-option">Forest</button>
+                    <button class="filter-option">Mountain View</button>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h2>Activities</h2>
+                <div class="filter-options">
+                    <button class="filter-option">Hiking</button>
+                    <button class="filter-option">Fishing</button>
+                    <button class="filter-option">Swimming</button>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h2>Amenities</h2>
+                <div class="filter-options">
+                    <button class="filter-option">Showers</button>
+                    <button class="filter-option">Toilets</button>
+                    <button class="filter-option">Fire Pits</button>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h2>Budget</h2>
+                <div class="filter-options">
+                    <button class="filter-option">Budget Friendly</button>
+                    <button class="filter-option">Free sites</button>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h2>Media View</h2>
+                <div class="filter-options">
+                    <button class="filter-option">Virtual walk</button>
+                    <button class="filter-option">Photos</button>
+                    <button class="filter-option">Videos</button>
+                </div>
+                <div class="filter-footer">
+                    <button class="back-button" onclick="window.location.href='explore.html'">Back</button>
+                    <button class="apply-button" onclick="window.location.href='explore.html'">Apply</button>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="nav-bar">
+            <a href="home.html" class="nav-item">
+                <span>Home</span>
+            </a>
+            <a href="explore.html" class="nav-item active">
+                <span>Explore</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span>Plan</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span>Profile</span>
+            </a>
+        </div>
+        <div class="home-bar"></div>
+    </div>
+
+    <script src="js/filter.js"></script>
+</body>
+</html>

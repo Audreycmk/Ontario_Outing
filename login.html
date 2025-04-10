@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Ontario Outing</title>
+    <link rel="stylesheet" href="styles/login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="tagline">Plan Less, <br />Camp More...</div>
+      <!-- Background Image Section -->
+      <div class="hero-section"></div>
+
+      <!-- Login Form Section -->
+      <div class="content">
+        <h1 class="login-title">Login</h1>
+
+        <div class="input-group">
+          <label class="input-label">User name / Email Address</label>
+          <input
+            type="text"
+            class="input-field"
+            value="KevinMathew@gail.com"
+            id="email"
+          />
+          <div class="error-message" id="email-error">
+            Add a valid email address
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label class="input-label">Password</label>
+          <input type="password" class="input-field" />
+        </div>
+
+        <button class="login-button" onclick="window.location.href='home.html'">Login</button>
+      
+
+        <div class="signup-link">
+          Don't have an account? <a href="signup.html">Create an account</a>
+        </div>
+
+        <div class="divider"><span class="divider-text">OR</span></div>
+
+        <div class="social-login">
+          <a
+            href="https://accounts.google.com/signin"
+            class="social-icon"
+            target="_blank"
+          >
+            <img src="images/google.png" alt="Google" />
+          </a>
+          <a
+            href="https://www.facebook.com/login"
+            class="social-icon"
+            target="_blank"
+          >
+            <img src="images/facebook.png" alt="Facebook" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="script/login.js"></script>
+  </body>
+</html>

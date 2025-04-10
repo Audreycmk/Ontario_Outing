@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banff Park - Ontario Parks</title>
+    <link rel="stylesheet" href="css/banff.css">
+</head>
+<body>
+    <div class="phone-mockup">
+        <div class="time"></div>
+        <div class="back-button" onclick="window.location.href='explore.html'"></div>
+        <div class="home-bg" id="main-bg" style="background-image: url('images/banff-info.svg')"></div>
+        
+        <!-- Image Gallery -->
+        <div class="image-gallery" id="gallery">
+            <div class="gallery-inner">
+                <div class="gallery-image" style="background-image: url('images/banff-2.jpg');" onclick="changeMainImage('images/banff-2.jpg')"></div>
+                <div class="gallery-image" style="background-image: url('images/banff-3.jpg');" onclick="changeMainImage('images/banff-3.jpg')"></div>
+                <div class="gallery-image" style="background-image: url('images/banff-4.jpg');" onclick="changeMainImage('images/banff-4.jpg')"></div>
+                <div class="gallery-image" style="background-image: url('images/banff-5.jpg');" onclick="changeMainImage('images/banff-5.jpg')"></div>
+            </div>
+        </div>
+        
+        <div class="explore">
+            <div class="park-detail">
+                <h1 class="park-title">Banff Park</h1>
+                <div class="park-location">Alberta, Canada</div>
+                
+                <div class="park-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">2-4 Hours</span>
+                        <span class="stat-label">Duration</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">5-8 Kms</span>
+                        <span class="stat-label">Distance</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">Easy</span>
+                        <span class="stat-label">Difficulty</span>
+                    </div>
+                </div>
+                
+                <h2 class="section-title">Camping in Banff</h2>
+                <p class="park-description">
+                    Discover the breathtaking beauty of Banff, where towering peaks, 
+                    crystal-clear lakes, and lush forests create the perfect outdoor escape. 
+                    Whether you're a seasoned adventurer or a first-time camper, Banff offers 
+                    unforgettable moments under the open sky.
+                </p>
+                
+                <h2 class="section-title">
+                    Map and Campsites
+                </h2>
+                
+                <div class="park-map"></div>
+                <div class="price-info">
+                    <span class="price">$110</span>
+                    <span class="price-label">Avg</span>
+                    <span class="price-location">Alberta, Canada</span>
+                </div>
+                
+                <h2 class="section-title">Reviews</h2>
+                <div class="reviews">
+                    <div class="review">
+                        <p class="review-text">
+                            Don't miss your chance to enjoy what our mother nature did create, 
+                            its unbelievable how beautiful some places could be.
+                        </p>
+                        <p class="review-author">- Sarah J.</p>
+                    </div>
+                    <div class="review">
+                        <p class="review-text">
+                            Yes it's cold but if you put more clothes you definitely will enjoy that hike...
+                        </p>
+                        <p class="review-author">- Michael T.</p>
+                    </div>
+                </div>
+                
+                <div class="button-group">
+                    <button class="check-weather">
+                        <img src="images/weather-icon.svg" alt="Weather" width="20">
+                        Check Weather
+                    </button>
+                    
+                    <button class="book-now-bottom" onclick="window.location.href='explore.html'">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav-bar">
+            <a href="home.html" class="nav-item">
+                <span>Home</span>
+            </a>
+            <a href="explore.html" class="nav-item active">
+                <span>Explore</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span>Plan</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span>Profile</span>
+            </a>
+        </div>
+        <div class="home-bar"></div>
+    </div>
+</body>
+</html>
